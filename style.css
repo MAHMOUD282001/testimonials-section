@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.content{
+    width: 100%;
+}
+
+.container{
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+.left{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left .first-container, .left .last-container{
+    display: flex;
+    width: 100%;
+}
+
+.left .first-container .first{
+    flex: 2;
+    background-color: hsl(263, 55%, 52%);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.left .first-container .second{
+    flex: 1;
+    background-color: hsl(217, 19%, 35%);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.left .first-container >div .top{
+    display: flex;
+    align-items: center;
+}
+
+.left .first-container >div .top img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+
+
+.left .first-container >div .top p:nth-of-type(1){
+    font-size: 14px;
+}
+
+.left .first-container >div .top p:nth-of-type(2){
+   font-weight: 300;
+   font-size: 12px;
+}
+
+.left .first-container >div .content p:nth-of-type(1){
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.left .first-container >div .content p:nth-of-type(2){
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+.left .last-container .thaird{
+    flex: 1;
+    background-color: hsl(0, 0%, 100%);
+    margin-right: 20px;
+    padding: 20px;
+    color: #111;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 20px;
+}
+
+.left .fourth{
+    flex: 2;
+    background-color: hsl(219, 29%, 14%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.left .last-container >div .top{
+    display: flex;
+    align-items: center;
+}
+
+.left .last-container >div .top img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+
+
+.left .last-container >div .top p:nth-of-type(1){
+    font-size: 14px;
+}
+
+.left .last-container >div .top p:nth-of-type(2){
+   font-weight: 300;
+   font-size: 12px;
+}
+
+.left .last-container >div .content p:nth-of-type(1){
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.left .last-container >div .content p:nth-of-type(2){
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+
+.right{
+    flex: 1;
+    background-color: hsl(0, 0%, 100%);
+    margin-left: 20px;
+    padding: 20px;
+    color: #111;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.right .top{
+    display: flex;
+    align-items: center;
+}
+
+.right .top img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+
+
+.right .top p:nth-of-type(1){
+    font-size: 14px;
+}
+
+.right .top p:nth-of-type(2){
+   font-weight: 300;
+   font-size: 12px;
+}
+
+.right .content p:nth-of-type(1){
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.right .content p:nth-of-type(2){
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+@media(max-width:991px){
+
+    body{
+        min-height: 100vh;
+        height: 100%;
+    }
+    
+    .left .first-container{
+        flex-direction: column;
+    }
+    
+    .left .last-container{
+        flex-direction: column;
+    }
+
+    .left .first-container .first,
+    .left .first-container .second,
+    .left .last-container .thaird, .left .last-container .fourth,
+    .right{
+        flex: 1;
+        margin-right: 0;
+        margin-top: 20px;
+        
+    }
+    
+    .right {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:600px){
+    .container {
+        padding: 0 30px;
+    }
+}
